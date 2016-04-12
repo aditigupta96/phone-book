@@ -1,0 +1,13 @@
+<form method="post" action="/edit/{{person.id}}">
+    {% csrf_token %}
+    <label>Name: </label>
+    <input name="name" value="{{person.name}}">
+    <br>
+    <label>Phone: </label>
+    <input name="phone" value="{{person.phone}}">
+    <br>
+    <label>Age: </label>
+    <input name="age" value="{{person.age}}">
+    <br>
+    <input type="submit" value="Submit">
+</form>

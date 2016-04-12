@@ -1,0 +1,24 @@
+<h1>{{message}}</h1>
+
+
+<br>
+{% if people %}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Age</th>
+        </tr>
+    {% for person in people %}
+        <tr>
+            <td>{{person.name}}</td>
+            <td>{{person.phone}}</td>
+            <td>{{person.age}}</td>
+            <td><a href="/delete/{{person.id}}">Delete</a></td>
+	        <td><a href="/edit/{{person.id}}">Edit</a></td>
+        </tr>
+    {% endfor %}
+    </table>
+{% else %}
+    <p>No people in the database</p>
+{% endif %}

@@ -1,0 +1,13 @@
+<form method="post" action="/insert/">
+    {% csrf_token %}
+    <label>Name: </label>
+    <input name="name">
+    <br>
+    <label>Phone: </label>
+    <input name="phone">
+    <br>
+    <label>Age: </label>
+    <input name="age">
+    <br>
+    <input type="submit" value="Submit">
+</form>
