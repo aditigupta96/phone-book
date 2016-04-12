@@ -1,0 +1,7 @@
+django-admin startproject session2
+python manage.py startapp crud
+Open settings.py in the project folder and add the name of the app to the INSTALLED_APPS tuple
+Creating models
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
